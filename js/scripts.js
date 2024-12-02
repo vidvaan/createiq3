@@ -63,12 +63,3 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 });
-
- document.addEventListener("DOMContentLoaded", function () {
-            var myCarousel = document.querySelector('#coursesCarousel');
-            var carousel = new bootstrap.Carousel(myCarousel, {
-                interval: 3000,  // Slide transition interval (3 seconds)
-                ride: 'carousel', // Auto start the carousel
-                pause: 'hover',   // Pause on hover
-            });
-        });

@@ -13,10 +13,104 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar */
-.navbar {
-    border-bottom: 2px solid #ccc;
-}
+    /* Navbar styles */
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-brand img {
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-brand img:hover {
+        transform: scale(1.1);
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #f39c12;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #f39c12;
+        font-weight: bold;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    /* Social media icon styles */
+    .navbar-nav.ms-3 .nav-link i {
+        font-size: 1.2rem;
+        color: #ffffff;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-nav.ms-3 .nav-link i:hover {
+        transform: scale(1.2);
+        color: #f39c12;
+    }
+
+    /* Media queries */
+    @media (max-width: 768px) {
+        .navbar-brand span {
+            font-size: 0.9rem;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 0.9rem;
+        }
+
+        .navbar-nav.ms-3 .nav-link i {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .navbar-brand img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .navbar-brand span {
+            font-size: 0.8rem;
+        }
+
+        .navbar-nav {
+            text-align: center;
+        }
+
+        .navbar-nav .nav-link {
+            margin: 0.3rem 0;
+        }
+
+        /* Style for the navbar toggler icon */
+        .navbar-toggler-icon {
+            width: 20px; /* Reduce the width */
+            height: 20px; /* Reduce the height */
+            background-size: 15px 15px; /* Adjust the background size */
+        }
+
+        /* Optional: Adjust the toggler button padding for smaller toggler */
+        .navbar-toggler {
+            padding: 0.25rem 0.5rem; /* Adjust padding */
+            border-radius: 5px; /* Optional: make it more rounded */
+        }
+
+        /* Add hover effect for better visibility */
+        .navbar-toggler:hover .navbar-toggler-icon {
+            background-color: rgba(255, 255, 255, 0.2); /* Subtle background change */
+            transition: background-color 0.3s ease;
+        }
+    }
 
 /* Hero Section */
 header {
@@ -197,3 +291,7 @@ header p {
         margin-bottom: 15px;
     }
 }
+
+
+
+
